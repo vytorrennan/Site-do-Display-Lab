@@ -11,8 +11,32 @@
     background-color: var(--homeColor);
 }
 
+#content > div {
+    margin-bottom: 5vh;
+}
+
+h2 {
+    color: white;
+}
+
+.card {
+    background-color: var(--homeColor);
+    color: white;
+    font-weight: bold;
+}
+
 .border-card {
     border: 20px solid var(--homeColor) !important;
+}
+
+#cardSlider > #recipeCarousel > .carousel-control-prev,
+#cardSlider > #recipeCarousel > .carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (max-width: 767px) {
@@ -35,16 +59,55 @@
     
     #cardSlider > #recipeCarousel > .carousel-inner .carousel-item-end.active,
     #cardSlider > #recipeCarousel > .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
+      transform: translateX(33.33333%);
     }
     
     #cardSlider > #recipeCarousel > .carousel-inner .carousel-item-start.active, 
     #cardSlider > #recipeCarousel > .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
+      transform: translateX(-33.33333%);
     }
 }
 
 #cardSlider > #recipeCarousel > .carousel-inner .carousel-item-end,
 #cardSlider > #recipeCarousel > .carousel-inner .carousel-item-start { 
   transform: translateX(0);
+}
+
+
+#conteudos {
+    display: flex;
+    gap: 10%;
+    padding: 2% 5%;
+    font-weight: bold;
+}
+
+@media (max-width: 990px) {
+    #conteudos {
+        flex-direction: column;
+    }
+}
+
+#conteudos > div {
+    margin: 10px 0px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#conteudos > div > h3 {
+    color: whitesmoke;
+}
+
+#podcast {
+    background-image: url("../imgs/home/conteudos/banner\ 3.svg");
+}
+
+#biblioteca {
+    background-image: url("../imgs/home/conteudos/banner\ 4.svg");
+}
+
+#games {
+    background-image: url("../imgs/home/conteudos/banner\ 5.svg");
 }
