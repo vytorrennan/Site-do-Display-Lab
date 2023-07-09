@@ -1,8 +1,50 @@
+:root {
+    --homeColor: #197cc0;
+}
+
 #homeNav {
-    background-color: #197cc0;
+    background-color: var(--homeColor);
     color: white !important;
 }
 
 #content {
-    background-color: #197cc0;
+    background-color: var(--homeColor);
+}
+
+.border-card {
+    border: 20px solid var(--homeColor) !important;
+}
+
+@media (max-width: 767px) {
+    #cardSlider > #recipeCarousel > .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    #cardSlider > #recipeCarousel > .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+#cardSlider > #recipeCarousel > .carousel-inner .carousel-item.active,
+#cardSlider > #recipeCarousel > .carousel-inner .carousel-item-next,
+#cardSlider > #recipeCarousel > .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    #cardSlider > #recipeCarousel > .carousel-inner .carousel-item-end.active,
+    #cardSlider > #recipeCarousel > .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    #cardSlider > #recipeCarousel > .carousel-inner .carousel-item-start.active, 
+    #cardSlider > #recipeCarousel > .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+#cardSlider > #recipeCarousel > .carousel-inner .carousel-item-end,
+#cardSlider > #recipeCarousel > .carousel-inner .carousel-item-start { 
+  transform: translateX(0);
 }
