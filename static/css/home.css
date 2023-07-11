@@ -25,6 +25,10 @@ h2 {
     font-weight: bold;
 }
 
+.card-img > img {
+    width: 100% !important;
+}
+
 .border-card {
     border: 20px solid var(--homeColor) !important;
 }
