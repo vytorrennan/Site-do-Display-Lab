@@ -18,6 +18,10 @@ nav {
     nav {
         width: 100% !important;
     }
+
+    #content {
+        border-radius: 0px 0px .25rem .25rem !important;
+    }
 }
 
 #content {

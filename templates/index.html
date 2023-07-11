@@ -29,8 +29,8 @@
       </div>
 
       <nav class="nav nav-pills flex-column flex-sm-row flex-nowrap" style="margin-top: 20px;">
-        <a class="flex-sm-fill text-sm-center nav-link rounded-0 rounded-top text-dark" id="homeNav" href="#">HOME</a>
-        <a class="flex-sm-fill text-sm-center nav-link rounded-0 rounded-top text-dark" id="projetosNav" href="#">PROJETOS</a>
+        <a class="flex-sm-fill text-sm-center nav-link rounded-0 rounded-top text-dark" id="homeNav" href="{{ url_for('home') }}">HOME</a>
+        <a class="flex-sm-fill text-sm-center nav-link rounded-0 rounded-top text-dark" id="projetosNav" href="{{ url_for('projetos') }}">PROJETOS</a>
         <a class="flex-sm-fill text-sm-center nav-link rounded-0 rounded-top text-dark" id="institucionalNav" href="#">INSTITUCIONAL</a>
         <a class="flex-sm-fill text-sm-center nav-link rounded-0 rounded-top text-dark" id="sobreNav" href="#">QUEM SOMOS</a>
       </nav>
