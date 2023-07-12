@@ -10,6 +10,10 @@ def home():
 def projetos():
     return render_template("projetos.html")
 
+@app.route("/institucional")
+def institucional():
+    return render_template("institucional.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
