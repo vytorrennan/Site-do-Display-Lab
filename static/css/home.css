@@ -22,7 +22,7 @@ h2 {
 }
 
 .card {
-    background-color: var(--homeColor);
+    background-color: transparent;
     color: white;
     font-weight: bold;
 }
@@ -32,7 +32,7 @@ h2 {
 }
 
 .border-card {
-    border: 20px solid var(--homeColor) !important;
+    border: 20px solid transparent !important;
 }
 
 #cardSlider > #recipeCarousel > .carousel-control-prev,
