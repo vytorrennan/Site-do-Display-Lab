@@ -1,5 +1,5 @@
 :root {
-    --projetosColor: #f18f20;
+    --projetosColor: #f59f24;
 }
 
 #sobreNav {
@@ -9,6 +9,7 @@
 
 #content {
     background-color: var(--projetosColor);
+    background-image: url("../imgs/sobre/background/textura-4.gif");
     padding: 1.8em;
 }
 

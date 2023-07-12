@@ -9,6 +9,7 @@
 
 #content {
     background-color: var(--projetosColor);
+    background-image: url("../imgs/institucional/background/textura-3.gif");
     padding: 2em;
 }
 

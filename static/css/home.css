@@ -8,8 +8,8 @@
 }
 
 #content {
-    background-color: var(--homeColor);
     padding: 2em;
+    background-image: url("../imgs/home/background/textura-1.gif");
 }
 
 #content > div {

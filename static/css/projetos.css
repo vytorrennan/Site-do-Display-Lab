@@ -9,6 +9,7 @@
 
 #content {
     background-color: var(--projetosColor);
+    background-image: url("../imgs/projetos/background/textura-2.gif");
 }
 
 #cardsProjetos {
