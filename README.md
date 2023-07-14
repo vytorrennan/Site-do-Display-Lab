@@ -55,3 +55,26 @@ aplicação `python3 app.py` que ele já executa a aplicação em rede.
 Vale ressaltar que o comando `python3 app.py` é o que roda no sistema operacional linux caso você 
 use outro sistema operacional execute pelo comando apropriado para o seu sistema
 
+
+
+### Resumo
+---
+```bash
+# Criar ambiente virtual
+python3 -m venv .venv    # Ubuntu
+python -m venv .venv     # Fedora
+
+# Ativar Ambiente virtual
+. .venv/bin/activate
+
+# Instalar e Atualizar dependências
+pip install -r requirements.txt
+
+# Instalar biblioteca
+pip install nome_da_biblioteca
+pip freeze > requirements.txt
+
+# Executar Aplicação
+python3 app.py      # Ubuntu
+python app.py       #  Fedora
+```
