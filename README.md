@@ -1,6 +1,7 @@
 # Site-do-Display-Lab
 Website oficial do laboratório Display do Instituto Federal do Norte de Minas Gerais - Campus Januária
 
+
 # Criação do ambiente virtual
 
 Passo a passo para criar o ambiente virtual caso vc não tenha ainda na sua máquina.
@@ -44,8 +45,4 @@ aplicação `python3 app.py` que ele já executa a aplicação em rede.
 
 Vale ressaltar que o comando `python3 app.py` é o que roda no sistema operacional linux caso você 
 use outro sistema operacional execute pelo comando apropriado para o seu sistema
-
-
-
-
 
