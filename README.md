@@ -75,6 +75,5 @@ pip install nome_da_biblioteca
 pip freeze > requirements.txt
 
 # Executar Aplicação
-python3 app.py      # Ubuntu
-python app.py       #  Fedora
+flask run --debug
 ```

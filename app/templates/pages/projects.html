@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Projetos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/projetos.css') }}">
+{% endblock %}
+
+{% block content %}
+    <h2 class="text-white m-4">OS PROJETOS DO DISPLAY</h2>
+
+    <div id="cardsProjetos">
+        <div class="card mb-3 cardProjeto layout1">
+            <div class="row g-0">
+                <div class="col-md-10 position-relative d-flex flex-column align-items-center">
+                    <div class="card-body mb-3">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">&nbsp;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p>&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sunt libero laborum provident cum sit quo adipisci quos praesentium, placeat est expedita error magnam, quisquam obcaecati quas corrupti eos ducimus illum omnis nam? Deleniti incidunt </p>
+                    </div>
+                    <button class="saibaMaisBtn rounded-3 mb-3">SAIBA MAIS</button>
+                </div>
+                <div class="col-md-2">
+                    <img src="{{ url_for('static', filename='imgs/projetos/banner2.svg') }}" class="img-fluid rounded-start cardProjetosImage" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 cardProjeto layout2">
+            <div class="row g-0">
+                <div class="col-md-10 position-relative d-flex flex-column align-items-center">
+                    <div class="card-body mb-3">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">&nbsp;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quaerat nihil quo, nesciunt, aliquid expedita veritatis voluptatum amet nobis in delectus. Natus illum accusantium officia eaque expedita. Culpa, dolor qui Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, corrupti natus? Obcaecati, eius odit! Dolor rem sit perspiciatis placeat? Eum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda asperiores enim ipsa consequuntur illo quod eligendi, provident voluptatem repudiandae ex.</p>
+                    </div>
+                    <button class="saibaMaisBtn rounded-3 mb-3">SAIBA MAIS</button>
+                </div>
+                <div class="col-md-2">
+                    <img src="{{ url_for('static', filename='imgs/projetos/banner2.svg') }}" class="img-fluid rounded-start cardProjetosImage" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}{% endblock %}

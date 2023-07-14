@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <title>Home</title>
+{% endblock %}
+
+
+{% block content %}
+    <h2>NOTÍCIAS</h2>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ url_for('static', filename='imgs/home/carousel/podcastBanner.png') }}" class="d-block w-100" alt="...">
+            </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='imgs/home/carousel/exterminandoDrogasBanner.png') }}" class="d-block w-100" alt="...">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div id="cardSlider" class="row mx-auto mb-5 my-auto justify-content-center">
+        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-md-4">
+                        <div class="card border-card">
+                            <div class="card-img">
+                                <img src="{{ url_for('static', filename='imgs/home/cards/banner2.svg') }}" class="img-fluid">
+                            </div>
+                            <div class="">DisplayCast - O mais novo Podcast do Display</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card border-card">
+                            <div class="card-img">
+                                <img src="{{ url_for('static', filename='imgs/home/cards/banner2.svg') }}" class="img-fluid">
+                            </div>
+                            <div class="">Exterminando Drogas - Uma aventura Educativa em 2D sobre drogas</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card border-card">
+                            <div class="card-img">
+                                <img src="{{ url_for('static', filename='imgs/home/cards/banner2.svg') }}" class="img-fluid">
+                            </div>
+                            <div class="">Bate-papo Tech - Confira o cronograma temporada 2023</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card border-card">
+                            <div class="card-img">
+                                <img src="{{ url_for('static', filename='imgs/home/cards/banner2.svg') }}" class="img-fluid">
+                            </div>
+                            <div class="">Lorem ipsum dolor sit amet.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card border-card">
+                            <div class="card-img">
+                                <img src="{{ url_for('static', filename='imgs/home/cards/banner2.svg') }}" class="img-fluid">
+                            </div>
+                            <div class="">Exterminando Drogas - Uma aventura Educativa em 2D sobre drogas</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card border-card">
+                            <div class="card-img">
+                                <img src="{{ url_for('static', filename='imgs/home/cards/banner2.svg') }}" class="img-fluid">
+                            </div>
+                            <div class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <h2 style="text-align: center;">CONHEÇA NOSSOS CONTEÚDOS</h2>
+
+    <div id="conteudos" class="bg-white">
+        <div id="podcast">
+            <h3>Bate-papo Tech</h3>
+            <p>Episódio 1</p>
+            <p>Episódio 2</p>
+            <p>Episódio 3</p>
+            <p>Episódio 4</p>
+        </div>
+        <div id="biblioteca">
+            <h3>Biblioteca</h3>
+            <p>EducaRedes: Jogo Digital Educacional como ferramenta de Auxílio no Ensino da Arquitetura TCP/IP</p>
+            <p>PDF 1</p>
+            <p>PDF 2</p>
+        </div>
+        <div id="games">
+            <h3>Games</h3>
+            <p>Indisciplina 2D</p>
+            <p>Exterminando Drogas</p>
+            <p>EducaRedes</p>
+            <p>Peruaçu Digital</p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+{% endblock %}
