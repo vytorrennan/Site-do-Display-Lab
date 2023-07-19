@@ -12,8 +12,14 @@
     padding: 2em;
 }
 
+@media (min-width: 1440px) {
+    #content {
+        font-size: 1.5em;
+    }
+}
+
 #tituloExterminandoDrogas {
-    font-size: 3em;
+
 }
 
 #gameScreenshotDiv {
@@ -40,7 +46,6 @@
 }
 
 #extermiandoDrogasArticle > div > h2 {
-    font-size: 3em;
     margin: 1em 0px;
 }
 
@@ -48,7 +53,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5em;
 }
 
 #personagemPrincipalImg {
