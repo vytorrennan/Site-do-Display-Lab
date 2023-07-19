@@ -42,7 +42,7 @@ def sobre():
 
 @app.route("/projetos/exterminandoDrogas")
 def exterminandoDrogas():
-    return render_template("projetos/exterminandoDrogas.html")
+    return render_template("postsProjetos/exterminandoDrogas.html")
 
 if __name__ == '__main__':
     app.run(
