@@ -30,6 +30,9 @@
 }
 
 .saibaMaisBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 10em;
     height: 2.2em;
     border: 0px;

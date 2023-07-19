@@ -38,6 +38,11 @@ def institucional():
 def sobre():
     return render_template("sobre.html")
 
+# Projetos
+
+@app.route("/projetos/exterminandoDrogas")
+def exterminandoDrogas():
+    return render_template("projetos/exterminandoDrogas.html")
 
 if __name__ == '__main__':
     app.run(
