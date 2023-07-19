@@ -44,6 +44,10 @@ def sobre():
 def exterminandoDrogas():
     return render_template("postsProjetos/exterminandoDrogas.html")
 
+@app.route("/projetos/displayCast")
+def displayCast():
+    return render_template("postsProjetos/displayCast.html")
+
 if __name__ == '__main__':
     app.run(
         host='0.0.0.0',
