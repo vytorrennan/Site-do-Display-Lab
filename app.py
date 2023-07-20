@@ -1,26 +1,6 @@
 from flask import Flask, render_template
 
-#=======================================================================================================================
-#                                               Banco de Dados - SQLite
-#=======================================================================================================================
-
-from flask_migrate import Migrate
-import os
-
-from models import db, Cargo, Colaboradores, Biblioteca, Projeto, Games, DisplayCast, Projeto_Games, Projeto_DisplayCast
-
 app = Flask(__name__)
-
-# Define o caminho absoluto para o arquivo do banco de dados SQLite
-database_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'database.db')
-
-# Configuração do banco de dados SQLite
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + database_path
-
-db.init_app(app)
-migrate = Migrate(app, db)
-
-#=======================================================================================================================
 
 @app.route("/")
 def home():
