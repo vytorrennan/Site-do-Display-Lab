@@ -48,6 +48,10 @@ def exterminandoDrogas():
 def displayCast():
     return render_template("postsProjetos/displayCast.html")
 
+@app.route("/projetos/indisciplina2D")
+def indisciplina2D():
+    return render_template("postsProjetos/indisciplina2D.html")
+
 if __name__ == '__main__':
     app.run(
         host='0.0.0.0',
