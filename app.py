@@ -28,6 +28,10 @@ def exterminandoDrogas():
 def displayCast():
     return render_template("postsProjetos/displayCast.html")
 
+@app.route("/projetos/educaRedes")
+def educaRedes():
+    return render_template("postsProjetos/educaRedes.html")
+
 if __name__ == '__main__':
     app.run(
         host='0.0.0.0',
