@@ -32,6 +32,10 @@ def displayCast():
 def educaRedes():
     return render_template("postsProjetos/educaRedes.html")
 
+@app.route("/projetos/peruacuDigital")
+def peruacuDigital():
+    return render_template("postsProjetos/peruacuDigital.html")
+
 if __name__ == '__main__':
     app.run(
         host='0.0.0.0',
