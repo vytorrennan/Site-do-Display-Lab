@@ -107,19 +107,19 @@ h2 {
 }
 
 #podcast {
-    background-image: url("../imgs/home/conteudos/banner3.svg");
+    background-image: url("../imgs/home/conteudos/banner%203.svg");
     background-size: cover !important;
     /*background-color: #38649c;*/
 }
 
 #biblioteca {
-    background-image: url("../imgs/home/conteudos/banner4.svg");
+    background-image: url("../imgs/home/conteudos/banner%204.svg");
     background-size: cover !important;
     /*background-color: #80247c;*/
 }
 
 #games {
-    background-image: url("../imgs/home/conteudos/banner5.svg");
+    background-image: url("../imgs/home/conteudos/banner%205.svg");
     background-size: cover !important;
     /*background-color: #203c8c;*/
 }
